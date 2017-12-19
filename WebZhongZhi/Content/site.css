@@ -1,0 +1,23 @@
+﻿i {
+    color: red !important;
+}
+
+.userBlock {
+    float: right !important;
+    height: 60px;
+    line-height: 60px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+img, span {
+    vertical-align: middle !important;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}

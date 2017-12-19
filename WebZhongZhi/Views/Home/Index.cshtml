@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@RenderPage("~/Views/Shared/LeftMenu.cshtml")
+                
+<!--右侧实体内容-->
+<el-main id="mainPage">
+</el-main>
+
+@section scripts{
+    <script>
+        var index = new Vue({
+            el: '#app',
+            mixins: [mixin],
+            data: function () {
+                return {
+                    isLogin: false,
+                    activeIndex: '1'
+                }
+            },
+            methods: {
+
+            },
+            created: function () {
+                console.log(this.user)
+            }
+        })
+
+
+        $("#tempPage").load('/Home/Home1')
+    </script>
+}
+
+
+@RenderPage("~/Views/Shared/LeftAnother.cshtml")
+  
