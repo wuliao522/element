@@ -4,7 +4,9 @@
 
 <div>
     <el-tabs type="border-card">
-        <el-tab-pane label="首页">首页</el-tab-pane>
+        <el-tab-pane label="首页">
+            @RenderPage("~/Views/Home/Index.cshtml")
+        </el-tab-pane>
         <!--主分页-->
         <el-tab-pane label="在线办公">
             <el-container style="height: 500px; border: 1px solid #eee">
