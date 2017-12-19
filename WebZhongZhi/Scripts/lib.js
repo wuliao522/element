@@ -12,14 +12,62 @@ function logout() {
     location.reload()
 }
 
+function loadPage(url) {
+    $("#tempPage").load(url)
+}
+
+function loadHtml(parentId,childId) {
+    $("#" + parentId).html('')
+    $("#" + parentId).append($("#" + childId))
+}
+
+function _cloneObj(obj) {
+    var newObj = {}
+    for (var o in obj) {
+        newObj[o]=obj[o]
+    }
+    return newObj
+}
+
+function isArray(o) {
+    return Object.prototype.toString.call(o) == '[object Array]';
+}
+
+var pickerOptions = {
+    shortcuts: [{
+        text: '最近一周',
+        onClick(picker) {
+            const end = new Date();
+            const start = new Date();
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 7);
+            picker.$emit('pick', [start, end]);
+        }
+    }, {
+        text: '最近一个月',
+        onClick(picker) {
+            const end = new Date();
+            const start = new Date();
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 30);
+            picker.$emit('pick', [start, end]);
+        }
+    }, {
+        text: '最近三个月',
+        onClick(picker) {
+            const end = new Date();
+            const start = new Date();
+            start.setTime(start.getTime() - 3600 * 1000 * 24 * 90);
+            picker.$emit('pick', [start, end]);
+        }
+    }]
+}
+
 var mixin = {
     data: {
-        user: {}
+        user: {},
+        pickerOptions: pickerOptions
     },
     methods: {
-        loadPage: function (url) {
-            $("#tempPage").load(url)
-        }
+
     }
 }
 

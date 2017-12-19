@@ -165,6 +165,7 @@
     <Compile Include="Common\MySQLHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\ShowDetailController.cs" />
@@ -192,6 +193,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Scripts\echarts-all.js" />
     <Content Include="Scripts\element.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
     <Content Include="Scripts\lib.js" />
@@ -212,14 +214,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\ShowDetail\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Account\" />
-    <Folder Include="Views\Main\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -253,28 +254,31 @@
     <Content Include="Views\Shared\LeftAnother.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home2.cshtml" />
+    <Content Include="Views\Main\Main2.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home8.cshtml" />
+    <Content Include="Views\Main\Main8.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home3.cshtml" />
+    <Content Include="Views\Main\Main3.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home4.cshtml" />
+    <Content Include="Views\Main\Main4.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home5.cshtml" />
+    <Content Include="Views\Main\Main5.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home6.cshtml" />
+    <Content Include="Views\Main\Main6.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home7.cshtml" />
+    <Content Include="Views\Main\Main7.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Home1.cshtml" />
+    <Content Include="Views\Main\Main1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

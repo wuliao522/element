@@ -4,11 +4,12 @@
 
 <div class="clearFix">
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
-        <el-menu-item index="0" class="hidden-sm-and-down">
-            <img src="~/Content/images/miaov.png">
+        <el-menu-item index="0" class="hidden-xs-and-down">
+            @*<img src="~/Content/images/miaov.png">*@
+            <b class="title">泉州华中科技大学智能制造研究院</b>
         </el-menu-item>
 
-        <el-menu-item index="1">
+        @*<el-menu-item index="1">
              网站首页
         </el-menu-item>
 
@@ -22,10 +23,10 @@
             </el-menu-item>
             <el-menu-item index="2-2">新闻资讯</el-menu-item>
             <el-menu-item index="2-3">应用案例</el-menu-item>
-        </el-submenu>
+        </el-submenu>*@
 
-        <div index="4" class="userBlock hidden-sm-and-down">
-            <img src="~/Content/images/portrait.png">
+        <div index="4" class="userBlock ">
+            @*<img src="~/Content/images/portrait.png">*@
             <span><b>{{user.username}}</b> 欢迎您</span>
             <el-tag onclick="logout()" type="danger">登出</el-tag>
         </div>
