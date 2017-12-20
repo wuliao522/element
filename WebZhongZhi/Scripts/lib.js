@@ -32,7 +32,7 @@ function _cloneObj(obj) {
 function isArray(o) {
     return Object.prototype.toString.call(o) == '[object Array]';
 }
-
+//时间选择器插件参数
 var pickerOptions = {
     shortcuts: [{
         text: '最近一周',
@@ -60,7 +60,7 @@ var pickerOptions = {
         }
     }]
 }
-
+//实例总参数
 var mixin = {
     data: {
         user: {},

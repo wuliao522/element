@@ -25,14 +25,16 @@
 <body>
     
     <div id="app">
+        <el-header>
+            @RenderPage("~/Views/Shared/Head_login.cshtml")
+        </el-header>
         <el-container>
-            <el-header>
-                @RenderPage("~/Views/Shared/Head_login.cshtml")
-            </el-header>
             <el-main>
                 @RenderBody()
             </el-main>
-            <el-footer>Footer</el-footer>
+            <el-footer>
+                @RenderPage("~/Views/Shared/Footer.cshtml")
+            </el-footer>
         </el-container>
     </div>
     <div id="tempPage"></div>
